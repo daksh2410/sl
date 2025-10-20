@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Solo Leveling System</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <!-- Firebase SDK -->
     <script type="module" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js"></script>
@@ -15,12 +15,13 @@
         <h1>Solo Leveling System</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="timer.html">Pomodoro Timer</a></li>
-                <li><a href="rewards.html">Rewards</a></li>
-                <li><a href="journal.html">Journal</a></li>
-                <li><a href="progress.html">Progress</a></li>
-                <li><a href="hall-of-shadows.html">Hall of Shadows</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/timer">Pomodoro Timer</a></li>
+                <li><a href="/rewards">Rewards</a></li>
+                <li><a href="/journal">Journal</a></li>
+                <li><a href="/progress">Progress</a></li>
+                <li><a href="/hall-of-shadows">Hall of Shadows</a></li>
+                <li><a href="/login" class="active">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -48,13 +49,13 @@
                 <div id="user-info" style="display: none;">
                     <h3>Welcome, <span id="user-email"></span></h3>
                     <button id="logout-btn">Logout</button>
-                    <a href="index.html" class="cta-button">Go to Dashboard</a>
+                    <a href="/" class="cta-button">Go to Dashboard</a>
                 </div>
             </div>
         </section>
     </main>
     
-    <script type="module" src="../scripts/firebase-config.js"></script>
-    <script type="module" src="../scripts/auth.js"></script>
+    <script type="module" src="/scripts/firebase-config.js"></script>
+    <script type="module" src="/scripts/auth.js"></script>
 </body>
 </html>
