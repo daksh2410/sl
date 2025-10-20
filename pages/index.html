@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Leveling System</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- Firebase SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Solo Leveling System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="timer.html">Pomodoro Timer</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="hall-of-shadows.html">Hall of Shadows</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="stats-container">
+            <div class="stat-card">
+                <h2>Strength</h2>
+                <p>Level: <span id="strength-level">1</span></p>
+                <p>XP: <span id="strength-xp">0</span>/100</p>
+                <div class="xp-bar">
+                    <div id="strength-bar" class="xp-fill"></div>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <h2>Intelligence</h2>
+                <p>Level: <span id="intelligence-level">1</span></p>
+                <p>XP: <span id="intelligence-xp">0</span>/100</p>
+                <div class="xp-bar">
+                    <div id="intelligence-bar" class="xp-fill"></div>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <h2>Charisma</h2>
+                <p>Level: <span id="charisma-level">1</span></p>
+                <p>XP: <span id="charisma-xp">0</span>/100</p>
+                <div class="xp-bar">
+                    <div id="charisma-bar" class="xp-fill"></div>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <h2>Wisdom</h2>
+                <p>Level: <span id="wisdom-level">1</span></p>
+                <p>XP: <span id="wisdom-xp">0</span>/100</p>
+                <div class="xp-bar">
+                    <div id="wisdom-bar" class="xp-fill"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="tasks-section">
+            <h2>Create New Task</h2>
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="Task Name" required>
+                <select id="task-category" required>
+                    <option value="">Select Category</option>
+                    <option value="strength">Strength</option>
+                    <option value="intelligence">Intelligence</option>
+                    <option value="charisma">Charisma</option>
+                    <option value="wisdom">Wisdom</option>
+                </select>
+                <input type="number" id="task-xp" placeholder="XP Reward" min="1" max="100" required>
+                <button type="submit">Add Task</button>
+            </form>
+            
+            <h2>Your Tasks</h2>
+            <ul id="tasks-list"></ul>
+        </section>
+    </main>
+    
+    <script type="module" src="../scripts/firebase-config.js"></script>
+    <script type="module" src="../scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress - Solo Leveling System</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Solo Leveling System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="timer.html">Pomodoro Timer</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="progress.html" class="active">Progress</a></li>
+                <li><a href="hall-of-shadows.html">Hall of Shadows</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="progress-container">
+            <h2>Progress Tracking</h2>
+            <p>Track your daily XP gains from completed quests</p>
+            
+            <div class="progress-stats">
+                <h3>Current Stats Overview</h3>
+                <div class="stats-grid">
+                    <div class="stat-summary">
+                        <h4>Strength</h4>
+                        <p>Level: <span id="summary-strength-level">1</span></p>
+                        <p>XP: <span id="summary-strength-xp">0</span>/100</p>
+                    </div>
+                    <div class="stat-summary">
+                        <h4>Intelligence</h4>
+                        <p>Level: <span id="summary-intelligence-level">1</span></p>
+                        <p>XP: <span id="summary-intelligence-xp">0</span>/100</p>
+                    </div>
+                    <div class="stat-summary">
+                        <h4>Charisma</h4>
+                        <p>Level: <span id="summary-charisma-level">1</span></p>
+                        <p>XP: <span id="summary-charisma-xp">0</span>/100</p>
+                    </div>
+                    <div class="stat-summary">
+                        <h4>Wisdom</h4>
+                        <p>Level: <span id="summary-wisdom-level">1</span></p>
+                        <p>XP: <span id="summary-wisdom-xp">0</span>/100</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="daily-xp-table">
+                <h3>Daily Quest Progress</h3>
+                <div class="table-navigation">
+                    <button id="prev-week" class="nav-btn">← Previous Week</button>
+                    <span id="week-range">Week 1</span>
+                    <button id="next-week" class="nav-btn">Next Week →</button>
+                </div>
+                <div class="scrollable-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Date</th>
+                                <th>Strength</th>
+                                <th>Intelligence</th>
+                                <th>Charisma</th>
+                                <th>Wisdom</th>
+                                <th>Total XP</th>
+                            </tr>
+                        </thead>
+                        <tbody id="xp-table-body">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="progress-chart">
+                <h3>XP Progress Over Time</h3>
+                <canvas id="progressChart"></canvas>
+            </div>
+        </section>
+    </main>
+    
+    <script type="module" src="../scripts/progress.js"></script>
+</body>
+</html>

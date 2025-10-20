@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall of Shadows - Solo Leveling System</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Solo Leveling System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="timer.html">Pomodoro Timer</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="hall-of-shadows.html" class="active">Hall of Shadows</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hall-container">
+            <h2>Hall of Shadows</h2>
+            <p>Record your personal victories and achievements</p>
+            
+            <div class="win-form">
+                <h3>Add New Victory</h3>
+                <form id="win-form">
+                    <input type="text" id="win-title" placeholder="Victory Title" required>
+                    <textarea id="win-description" placeholder="Describe your victory..." required></textarea>
+                    <div class="image-upload">
+                        <label for="win-image">Upload Image (optional):</label>
+                        <input type="file" id="win-image" accept="image/*">
+                        <div id="image-preview"></div>
+                    </div>
+                    <button type="submit">Record Victory</button>
+                </form>
+            </div>
+            
+            <div class="wins-gallery">
+                <h3>Your Victories</h3>
+                <div id="wins-list" class="wins-grid">
+                    <!-- Wins will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script type="module" src="../scripts/hall-of-shadows.js"></script>
+</body>
+</html>

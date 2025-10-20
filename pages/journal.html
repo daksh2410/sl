@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal - Solo Leveling System</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Solo Leveling System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="timer.html">Pomodoro Timer</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="journal.html" class="active">Journal</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="hall-of-shadows.html">Hall of Shadows</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="journal-container">
+            <h2>Personal Journal</h2>
+            <p>Reflect on your progress and document your journey</p>
+            
+            <div class="journal-form">
+                <textarea id="journal-entry" placeholder="Write your thoughts, reflections, or progress updates..."></textarea>
+                <button id="save-journal">Save Entry</button>
+            </div>
+            
+            <div class="journal-entries">
+                <h3>Your Journal Entries</h3>
+                <div id="journal-entries-list"></div>
+            </div>
+        </section>
+    </main>
+    
+    <script type="module" src="../scripts/journal.js"></script>
+</body>
+</html>
