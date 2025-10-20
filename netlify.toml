@@ -1,0 +1,38 @@
+[build]
+  publish = "/"
+  command = "echo 'No build command needed'"
+
+[[redirects]]
+  from = "/"
+  to = "/pages/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/timer"
+  to = "/pages/timer.html"
+  status = 200
+
+[[redirects]]
+  from = "/rewards"
+  to = "/pages/rewards.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal"
+  to = "/pages/journal.html"
+  status = 200
+
+[[redirects]]
+  from = "/progress"
+  to = "/pages/progress.html"
+  status = 200
+
+[[redirects]]
+  from = "/hall-of-shadows"
+  to = "/pages/hall-of-shadows.html"
+  status = 200
+
+[[redirects]]
+  from = "/login"
+  to = "/pages/login.html"
+  status = 200
