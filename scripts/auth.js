@@ -1,7 +1,7 @@
 // Authentication Script with Firebase Modular SDK
 
 // Import Firebase modules
-import { auth } from './firebase-config.js';
+import { auth } from '/scripts/firebase-config.js';
 import { 
   signInWithEmailAndPassword, 
   createUserWithEmailAndPassword, 

@@ -1,7 +1,7 @@
 // Progress Tracking Script with Firebase Integration
 
 // Import Firebase modules
-import { db, auth } from '../scripts/firebase-config.js';
+import { db, auth } from '/scripts/firebase-config.js';
 import { 
   collection, 
   doc, 
